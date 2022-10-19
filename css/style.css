@@ -269,6 +269,9 @@ body{
         top: 100%;
         left: 80%;
         gap: 0;
+        background: rgb(29, 27, 27);
+        box-shadow: inset 0px 0px 5px 3px rgb(0, 0, 0);
+        border-radius: 5px;
     }
     .social-bar img{
         width: 20px;
@@ -307,12 +310,14 @@ body{
     }
     .worlds-song{
         width: 90vw;
+        padding-bottom: 10px;
     }
     .worlds-song h1{
         font-size: 30px;
     }
     .sub-cont{
         width: 90vw;
+        padding-bottom: 10px;
     }
     .sub-cont h1{
         font-size: 30px;
