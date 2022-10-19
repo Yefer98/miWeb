@@ -248,7 +248,8 @@ body{
     .head-cont{
         width: 100vw;
         margin-top: 20%;
-        height: 20vh;
+        height: auto;
+        overflow: auto;
     }
     .title{
         margin-top: 20%;
@@ -259,7 +260,7 @@ body{
         left: 60%;
     }
     .worlds-song{
-        width: 80vw;
+        width: 90vw;
     }
     .worlds-song h1{
         font-size: 30px;
