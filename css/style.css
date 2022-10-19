@@ -32,11 +32,11 @@ body{
     right: 86%;
     bottom: 20%;
     width: 50px;
-    filter: grayscale(1);
+    filter: grayscale(0);
     transition: ease-in-out all 0.5s;
 }
 .riot-logo img:hover{
-    filter: grayscale(0);
+    filter: grayscale(1);
     transition: ease-in-out all 0.5s;
 }
 .button-bar{
@@ -47,19 +47,14 @@ body{
 }
 .button{
     font-size: 20px;
-    padding-bottom: 3%;
     text-decoration: none;
     color: white;
-    border-bottom: 2px solid white;
-    transition: ease-in-out all 0.3s;
 }
 .button:hover{
-    border-color: gray;
-    transition: ease-in-out all 0.3s;
+    border-bottom: 2px solid gray;
 }
 .desplegable{
     font-size: 20px;
-    padding-bottom: 3%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -144,9 +139,37 @@ body{
     border-bottom: 5px solid gray;
     overflow: hidden;
 }
+.head-cont2{
+    width: 100%;
+    margin-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    gap: 10%;
+    border-bottom: 5px solid gray;
+    overflow: hidden;
+}
+.head-bg{
+    z-index: 1;
+    position: absolute;
+    width: 99%;
+    right: 0.5%;
+    opacity: 0.6;
+}
 .title{
     z-index: 3;
     font-size: 150px;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+}
+.title2{
+    z-index: 3;
+    font-size: 100px;
     color: white;
     text-shadow: 4px 4px 5px black;
 }
@@ -156,13 +179,6 @@ body{
     position: absolute;
     top: 2%;
     left: 75%;
-}
-.head-bg{
-    z-index: 1;
-    position: absolute;
-    width: 99%;
-    right: 0.5%;
-    opacity: 0.6;
 }
 .worlds-song{
     width: 60vw;
@@ -176,6 +192,30 @@ body{
     text-align: center;
     color: white;
     text-shadow: 4px 4px 5px black;
+}
+.sub-cont{
+    width: 60vw;
+}
+.sub-cont h1{
+    column-span: all;
+    text-align: center;
+    color: #d22a36;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+}
+.sub-cont p{
+    -webkit-columns: 200px 2;
+    -moz-column: 200px 2;
+    column: 200px 2;
+    column-gap: 25px;
+    color: white;
+    letter-spacing: 1px;
+}
+.sub-cont p img{
+    width: 500px;
+    height: 270px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px black;
 }
 /* Estilos reproductor video */
 .fm-video {
@@ -246,18 +286,18 @@ body{
     .container{
         width: 100vw;
     }
-    .head-cont{
+    .head-cont,.head-cont2{
         width: 100vw;
         margin-top: 20%;
         height: auto;
     }
-    .title{
+    .title,.title2{
         margin-top: 10%;
         font-size: 60px;
     }
     .worlds-cup{
         width: 150px;
-        top: 30%;
+        top: 20%;
         left: 60%;
     }
     .worlds-song{
@@ -265,5 +305,15 @@ body{
     }
     .worlds-song h1{
         font-size: 30px;
+    }
+    .sub-cont{
+        width: 90vw;
+    }
+    .sub-cont h1{
+        font-size: 30px;
+    }
+    .sub-cont p img{
+        width: 300px;
+        height: 170px;
     }
   }
