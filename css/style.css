@@ -224,10 +224,13 @@ body{
         font-size: 17px;
     }
     .social-bar{
+        position: absolute;
+        top: 60%;
+        left: 64%;
         gap: 0;
     }
     .social-bar img{
-        width: 25px;
+        width: 20px;
     }
     .links{
         margin-top: 25px;
