@@ -264,13 +264,16 @@ body{
     .button,.desplegable{
         font-size: 17px;
     }
+    .social-bar a{
+        height: 16px;
+    }
     .social-bar{
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 100%;
-        left: 80%;
+        left: 1%;
         gap: 0;
-        background: rgb(29, 27, 27);
-        box-shadow: inset 0px 0px 5px 3px rgb(0, 0, 0);
+        padding: 0%;
         border-radius: 5px;
     }
     .social-bar img{
