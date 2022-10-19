@@ -201,7 +201,7 @@ body{
 .fm-video .vjs-big-play-button:hover {
 	background: rgba(49, 49, 49, 0.5);
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .menu {
         padding-left: 10%;
         padding-right: 10%;
