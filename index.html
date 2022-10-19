@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>miWeb</title>
+    <link rel="stylesheet" href="/css/video-js.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="js/video.js"></script>
+    <title>WORLDS 22</title>
 </head>
 <body>
     <nav class="menu">
         <div class="button-bar">
-            <a class="button" href="">inicio</a>
-            <a class="button" href="">top</a>
-            <a class="button" href="">highlights</a>
+            <a href="" class="riot-logo"><img src="img/social-bar/riot-games-logo.png" alt="riot-games"></a>
+            <a class="button" href="../index.html">inicio</a>
+            <a class="button" href="html/highlights.html">highlights</a>
+            <div class="desplegable">
+                <a href="top.html">top jugadores<img class="flecha" width="20px" height="20px" src="/img/social-bar/flecha.png" alt=""></a>
+                <div class="links">
+                   <a href="">top</a>
+                   <a href="">mid</a>
+                   <a href="">jungla</a>
+                   <a href="">adc</a>
+                   <a href="">supp</a>
+                </div>
+            </div>
         </div>
         <div class="social-bar">
-            <a class="social-button" href=""><img src="img/social-bar/twitter-logo.png" alt="twitter"></a>
-            <a class="social-button" href=""><img src="img/social-bar/youtube-logo.png" alt="youtube"></a>
-            <a class="social-button" href=""><img src="img/social-bar/twitch-logo.png" alt="twitch"></a>    
+            <a Target="_blank" class="social-button" href="https://twitter.com/lolesports"><img src="img/social-bar/twitter-logo.png" alt="twitter"></a>
+            <a Target="_blank" class="social-button" href="https://www.youtube.com/c/lolesports"><img src="img/social-bar/youtube-logo.png" alt="youtube"></a>
+            <a Target="_blank" class="social-button" href="https://www.twitch.tv/riotgames"><img src="img/social-bar/twitch-logo.png" alt="twitch"></a>    
         </div>
     </nav>
     <div class="container">
         <div class="head-cont">
+            <img src="img/worlds-header-bg.png" alt="" class="head-bg">
             <h1 class="title">WORLDS 2022</h1>
-            <img src="img/worlds-cup.png" alt="">
+            <img class="worlds-cup" src="img/worlds-cup.png" alt="">
+        </div>
+        <div class="worlds-song">
+            <h1>cancion del mundial 2022</h1><br>
+            <video width="500" class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+                <source src="video/worlds-song.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
+    <script>
+        var reproductor = videojs('fm-video',{
+            fluid: true
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background: rgb(29, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu{
+    z-index: 4;
+    background: rgb(29, 27, 27);
+    box-shadow: inset 0px 0px 5px 3px rgb(0, 0, 0);
+    width: 100%;
+    padding: 1.5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.riot-logo img{
+    width: clamp(25px,3vw,35px);
+    filter: grayscale(1);
+    transition: ease-in-out all 0.5s;
+}
+.riot-logo img:hover{
+    filter: grayscale(0);
+    transition: ease-in-out all 0.5s;
+}
+.button-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+.button{
+    font-size: clamp(15px,3vw,20px);
+    padding-bottom: 3%;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+    transition: ease-in-out all 0.3s;
+}
+.button:hover{
+    border-color: gray;
+    transition: ease-in-out all 0.3s;
+}
+.desplegable{
+    font-size: clamp(15px,3vw,20px);
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.desplegable a{
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 3px;
+    text-align: center;
+}
+.links{
+    background: rgb(41, 41, 41);
+    width: auto;
+    display: block;
+    visibility: hidden;
+    transition: ease-in-out all 0.5s;
+    position: absolute;
+    margin-top: 35px;
+    box-shadow: 0px 0px 5px;
+}
+.links a:hover{
+    background: gray;
+    transition: ease-in-out all 0.4s;
+}  
+.desplegable:hover .links{
+    visibility: visible;
+}
+.desplegable a .flecha{
+    transition: 0.7s;
+}
+.desplegable a:hover .flecha{
+    transform: rotate(180deg);
+    transition: 0.7s;
+}
+.social-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+.social-button img{
+    width: clamp(25px,3vw,30px);
+    filter: grayscale(1);
+    transition: ease-in-out all 0.5s;
+}
+.social-button img:hover{
+    filter: grayscale(0);
+    transition: ease-in-out all 0.5s;
+}
+.container{
+    background: rgb(34, 34, 34);
+    box-shadow: inset 0px 0px 5px 3px rgb(0, 0, 0);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 2%;
+}
+.head-cont{
+    width: 100%;
+    margin-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 10%;
+    border-bottom: 5px solid gray;
+    overflow: hidden;
+}
+.title{
+    z-index: 3;
+    font-size: clamp(20px,10vw,200px);
+    color: white;
+    text-shadow: 4px 4px 5px black;
+}
+.worlds-cup{
+    z-index: 2;
+    width: clamp(20px,10vw,200px);
+    position: absolute;
+    left: 80%;
+}
+.head-bg{
+    z-index: 1;
+    position: absolute;
+    width: 99%;
+    right: 0.5%;
+    opacity: 0.6;
+}
+.worlds-song{
+    width: 60vw;
+}
+.worlds-song video{
+    width: 100%;
+    box-shadow: 0px 0px 5px black;
+}
+.worlds-song h1{
+    font-size: clamp(20px,3vw,50px);
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+}
+/* Estilos reproductor video */
+.fm-video {
+	width: 100%;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
+}
+.fm-video .vjs-control-bar {
+	background: #F4F4F4;
+	color: #2f2f2f;
+}
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+	background: #1d87d8;
+}
+.fm-video .vjs-slider {
+	background: #2d5f85;
+}
+.video-js:hover .vjs-big-play-button {
+	background: rgba(255, 255, 255, 0.2);
+}
+.fm-video .vjs-big-play-button {
+	background: rgba(255, 255, 255, 0.2);
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 100%;
+	border:none;
+}
+.fm-video .vjs-big-play-button:hover {
+	background: rgba(49, 49, 49, 0.5);
+}
+@media (max-width: 768px) {
+    .menu {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .links{
+        margin-top: 25px;
+    }
+    .links a{
+        font-size: 10px;
+    }
+    .flecha{
+        width: 13px;
+        height: 13px;
+    }
+  }
