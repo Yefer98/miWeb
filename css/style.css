@@ -266,8 +266,8 @@ body{
     }
     .social-bar{
         position: absolute;
-        top: 60%;
-        left: 64%;
+        top: 100%;
+        left: 80%;
         gap: 0;
     }
     .social-bar img{
@@ -289,11 +289,16 @@ body{
     .head-cont,.head-cont2{
         width: 100vw;
         margin-top: 20%;
-        height: auto;
+        padding-bottom: 0%;
     }
-    .title,.title2{
-        margin-top: 10%;
+    .title{
+        margin-top: 5%;
         font-size: 60px;
+    }
+    .title2{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 30px;
     }
     .worlds-cup{
         width: 150px;
