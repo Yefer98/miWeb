@@ -280,9 +280,10 @@ body{
     }
     .links{
         margin-top: 25px;
+	padding-right: 2%;
     }
     .links a{
-        font-size: 10px;
+        font-size: 17px;
     }
     .flecha{
         width: 13px;
