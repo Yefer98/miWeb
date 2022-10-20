@@ -249,8 +249,8 @@ body{
 }
 @media (max-width: 480px) {
     .menu {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2%;
+        padding-right: 8%;
         gap: 4%;
         justify-content: space-evenly;
     }
@@ -259,19 +259,18 @@ body{
         width: 40px;
     }
     .button-bar{
-        gap: 2%;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        gap: 5%;
     }
     .button,.desplegable{
         font-size: 17px;
-    }
-    .social-bar a{
-        height: 16px;
     }
     .social-bar{
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 1%;
+        right: 1%;
         gap: 0;
         padding: 0%;
         border-radius: 5px;
