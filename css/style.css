@@ -68,26 +68,30 @@ body{
     gap: 10px;
 }
 .links{
+    width: 80px;
     background: rgb(41, 41, 41);
-    text-align: center;
-    width: auto;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1.5s;
-    transition: ease-in-out all 0.5s;
+    transition: 1s;
     position: absolute;
     margin-top: 35px;
     box-shadow: 0px 0px 5px;
 }
 .links a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
     text-decoration: none;
     color: white;
-    padding: 3px;
+    width: 100%;
+    transition: ease-in-out all 0.5s;
 }
 .links a:hover{
     background: gray;
-    transition: ease-in-out all 0.4s;
-}  
+    transition: ease-in-out all 0.5s;
+}
 .desplegable:hover .links{
     visibility: visible;
     opacity: 1;
@@ -98,6 +102,10 @@ body{
 .desplegable a:hover .flecha{
     transform: rotate(180deg);
     transition: 0.7s;
+}
+.links a:hover .flecha{
+    transform: none;
+    transition: none;
 }
 .social-bar{
     display: flex;
@@ -127,13 +135,14 @@ body{
 }
 .head-cont{
     width: 100%;
-    margin-top: 12%;
+    height: 30vw;
+    margin-top: 8%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 3%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: relative;
     gap: 10%;
     border-bottom: 5px solid gray;
@@ -141,7 +150,8 @@ body{
 }
 .head-cont2{
     width: 100%;
-    margin-top: 12%;
+    height: 30vw;
+    margin-top: 8%;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 3%;
@@ -155,6 +165,7 @@ body{
     overflow: hidden;
 }
 .head-bg{
+    margin-top: 17%;
     z-index: 1;
     position: absolute;
     width: 99%;
@@ -162,6 +173,7 @@ body{
     opacity: 0.6;
 }
 .title{
+    margin-top: 25%;
     z-index: 3;
     font-size: 150px;
     color: white;
@@ -177,24 +189,25 @@ body{
     z-index: 2;
     width: 250px;
     position: absolute;
-    top: 2%;
+    top: 30%;
     left: 75%;
 }
-.worlds-song{
+.worlds-song, .video{
     width: 60vw;
 }
-.worlds-song video{
+.worlds-song video, .video iframe{
     width: 100%;
     box-shadow: 0px 0px 5px black;
 }
-.worlds-song h1{
+.worlds-song h1, .sub-cont-highlights h1{
     font-size: 50px;
     text-align: center;
-    color: white;
+    color: #d22a36;
     text-shadow: 4px 4px 5px black;
 }
-.sub-cont{
+.sub-cont, .sub-cont-highlights{
     width: 60vw;
+    padding-bottom: 10px;
 }
 .sub-cont h1{
     column-span: all;
@@ -209,11 +222,12 @@ body{
     column: 200px 2;
     column-gap: 25px;
     color: white;
-    letter-spacing: 1px;
+    text-transform: none;
+    font-size: 20px;
 }
 .sub-cont p img{
-    width: 500px;
-    height: 270px;
+    width: 400px;
+    height: 230px;
     border-radius: 5px;
     box-shadow: 0px 0px 20px black;
 }
@@ -228,10 +242,10 @@ body{
 }
 .fm-video .vjs-play-progress,
 .fm-video .vjs-volume-level {
-	background: #1d87d8;
+	background: #858585;
 }
 .fm-video .vjs-slider {
-	background: #2d5f85;
+	background: #2c2c2c;
 }
 .video-js:hover .vjs-big-play-button {
 	background: rgba(255, 255, 255, 0.2);
@@ -240,12 +254,14 @@ body{
 	background: rgba(255, 255, 255, 0.2);
 	width: 60px;
 	height: 60px;
+    left: 52%;
+    top: 49%;
 	line-height: 60px;
 	border-radius: 100%;
 	border:none;
 }
 .fm-video .vjs-big-play-button:hover {
-	background: rgba(49, 49, 49, 0.5);
+	background: rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 480px) {
     .menu {
@@ -280,12 +296,9 @@ body{
     }
     .links{
         margin-top: 25px;
-	padding-right: 3%;
-	padidding-left: 3%;
     }
     .links a{
-        font-size: 20px;
-	text-align: center;
+        font-size: 17px;
     }
     .flecha{
         width: 13px;
@@ -295,6 +308,7 @@ body{
         width: 100vw;
     }
     .head-cont,.head-cont2{
+        height: auto;
         width: 100vw;
         margin-top: 20%;
         padding-bottom: 0%;
@@ -313,16 +327,17 @@ body{
         top: 20%;
         left: 60%;
     }
-    .worlds-song{
+    .worlds-song, .video{
         width: 90vw;
-        padding-bottom: 10px;
     }
-    .worlds-song h1{
+    .video iframe{
+        height: auto;
+    }
+    .worlds-song h1, .sub-cont-highlights h1{
         font-size: 30px;
     }
-    .sub-cont{
+    .sub-cont, .sub-cont-highlights{
         width: 90vw;
-        padding-bottom: 10px;
     }
     .sub-cont h1{
         font-size: 30px;
@@ -330,5 +345,12 @@ body{
     .sub-cont p img{
         width: 300px;
         height: 170px;
+    }
+    .fm-video .vjs-big-play-button {
+        width: 50px;
+        height: 50px;
+        left: 55%;
+        top: 50%;
+        line-height: 50px;
     }
   }
