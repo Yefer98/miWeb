@@ -209,6 +209,9 @@ body{
     width: 60vw;
     padding-bottom: 10px;
 }
+.video iframe{
+    height: 480px;
+}
 .sub-cont h1{
     column-span: all;
     text-align: center;
@@ -331,7 +334,7 @@ body{
         width: 90vw;
     }
     .video iframe{
-        height: auto;
+        height: 180px;
     }
     .worlds-song h1, .sub-cont-highlights h1{
         font-size: 30px;
