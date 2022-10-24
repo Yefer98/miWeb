@@ -275,12 +275,19 @@ body{
 @media (max-width: 768px) {
     .social-bar{
         flex-direction: row;
-        position: initial;
+        position: none;
         right: 0;
-        margin-left: 3%;
+        margin-left: 5%;
+        gap: 5%;
     }
     .container{
         width: 100vw;
+    }
+    .head-cont,.head-cont2{
+        height: auto;
+        width: 100vw;
+        margin-top: 30%;
+        padding-bottom: 0%;
     }
   }
 @media (max-width: 480px) {
