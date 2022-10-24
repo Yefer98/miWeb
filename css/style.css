@@ -280,6 +280,11 @@ body{
     .riot-logo img{
         position: initial;
     }
+    .button-bar{
+        margin-top: 17px;
+        margin-bottom: 17px;
+        gap: 5%;
+    }
     .social-bar{
         flex-direction: row;
         position: none;
@@ -292,17 +297,20 @@ body{
     .head-cont,.head-cont2{
         height: auto;
         width: 100vw;
-        margin-top: 5%;
+        margin-top: 12%;
         padding-bottom: 0%;
     }
     .title{
         margin-top: 5%;
-        font-size: 60px;
+        font-size: 85px;
     }
     .title2{
         margin-top: 10%;
         margin-bottom: 10%;
-        font-size: 30px;
+        font-size: 55px;
+    }
+    .video iframe{
+        height: 100px;
     }
   }
 @media (max-width: 480px) {
