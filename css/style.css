@@ -96,16 +96,22 @@ body{
     visibility: visible;
     opacity: 1;
 }
+/* .button2{
+    --transform: rotate(0deg);
+}
+.button2:hover{
+    --transform: rotate(180deg);
+}
+.flecha{
+    transform: var(--transform);
+    transition: transform .7s;
+} */
 .desplegable a .flecha{
     transition: 0.7s;
 }
 .desplegable a:hover .flecha{
     transform: rotate(180deg);
     transition: 0.7s;
-}
-.links a:hover .flecha{
-    transform: none;
-    transition: none;
 }
 .social-bar{
     display: flex;
