@@ -277,6 +277,9 @@ body{
         padding-left: 10%;
         padding-right: 10%;
     }
+    .riot-logo img{
+        position: initial;
+    }
     .social-bar{
         flex-direction: row;
         position: none;
@@ -289,7 +292,17 @@ body{
     .head-cont,.head-cont2{
         height: auto;
         width: 100vw;
-        margin-top: 15%;
+        margin-top: 5%;
+        padding-bottom: 0%;
+    }
+    .title{
+        margin-top: 5%;
+        font-size: 60px;
+    }
+    .title2{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 30px;
     }
   }
 @media (max-width: 480px) {
