@@ -369,7 +369,7 @@ body{
         padding-bottom: 0%;
     }
     .title{
-        margin-top: 5%;
+        margin-top: 10%;
         font-size: 60px;
     }
     .title2{
@@ -379,7 +379,7 @@ body{
     }
     .worlds-cup{
         width: 150px;
-        top: 20%;
+        top: 25%;
         left: 60%;
     }
     .worlds-song, .video{
