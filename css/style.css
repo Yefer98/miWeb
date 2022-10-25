@@ -368,14 +368,20 @@ body{
     .container{
         width: 100vw;
     }
-    .head-cont,.head-cont2{
+    .head-cont{
+        height: auto;
+        width: 100vw;
+        margin-top: 10%;
+        padding-bottom: 0%;
+    }
+    .head-cont2{
         height: auto;
         width: 100vw;
         margin-top: 20%;
         padding-bottom: 0%;
     }
     .title{
-        margin-top: 20%;
+        margin-top: 25%;
         font-size: 60px;
     }
     .title2{
@@ -385,7 +391,7 @@ body{
     }
     .worlds-cup{
         width: 150px;
-        top: 30%;
+        top: 35%;
         left: 60%;
     }
     .worlds-song, .video{
