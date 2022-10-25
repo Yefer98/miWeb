@@ -297,11 +297,17 @@ body{
     .head-cont,.head-cont2{
         height: auto;
         width: 100vw;
-        margin-top: 12%;
+        margin-top: 13%;
         padding-bottom: 0%;
+    }
+    .worlds-cup{
+        width: 150px;
+        top: 20%;
+        left: 60%;
     }
     .title{
         margin-top: 5%;
+        margin-bottom: 5%;
         font-size: 85px;
     }
     .title2{
@@ -310,7 +316,7 @@ body{
         font-size: 55px;
     }
     .video iframe{
-        height: 100px;
+        height: 180px;
     }
   }
 @media (max-width: 480px) {
