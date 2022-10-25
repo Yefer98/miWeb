@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+⁸@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -371,8 +371,10 @@ body{
     .head-cont{
         height: auto;
         width: 100vw;
-        margin-top: 10%;
+        margin-top: 5%;
         padding-bottom: 0%;
+        display: flex;
+        justify-content: center;
     }
     .head-cont2{
         height: auto;
@@ -381,7 +383,6 @@ body{
         padding-bottom: 0%;
     }
     .title{
-        margin-top: 25%;
         font-size: 60px;
     }
     .title2{
