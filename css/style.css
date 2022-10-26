@@ -322,7 +322,7 @@ body{
         font-size: 55px;
     }
     .video iframe{
-        height: 180px;
+        height: 200px;
     }
   }
 @media (max-width: 480px) {
@@ -371,7 +371,7 @@ body{
     .head-cont{
         height: auto;
         width: 100vw;
-        margin-top: 10%;
+        margin-top: 8%;
         padding-bottom: 0%;
         display: flex;
         justify-content: center;
