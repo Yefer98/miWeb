@@ -383,6 +383,7 @@ body{
         padding-bottom: 0%;
     }
     .title{
+        position: absolute;
         margin-top: 25%;
         font-size: 60px;
     }
