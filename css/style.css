@@ -293,7 +293,7 @@ body{
     }
     .container{
         width: 100vw;
-        padding: 10%;
+        padding-bottom: 10%;
     }
     .head-cont{
         height: auto;
@@ -373,7 +373,7 @@ body{
     .head-cont{
         height: auto;
         width: 100vw;
-        margin-top: 7%;
+        margin-top: 8%;
         padding-bottom: 0%;
         display: flex;
         justify-content: center;
