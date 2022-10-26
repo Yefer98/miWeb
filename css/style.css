@@ -281,8 +281,8 @@ body{
         position: initial;
     }
     .button-bar{
-        margin-top: 14px;
-        margin-bottom: 14px;
+        margin-top: 12px;
+        margin-bottom: 12px;
         gap: 5%;
     }
     .social-bar{
@@ -293,7 +293,7 @@ body{
     }
     .container{
         width: 100vw;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
     }
     .head-cont{
         height: auto;
@@ -323,7 +323,7 @@ body{
         font-size: 55px;
     }
     .video iframe{
-        height: 200px;
+        height: 210px;
     }
   }
 @media (max-width: 480px) {
@@ -388,7 +388,7 @@ body{
 	    width: 100%;
     }    
     .title{
-        margin-top: 17.5%;
+        margin-top: 17%;
         font-size: 60px;
     }
     .title2{
