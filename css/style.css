@@ -371,7 +371,7 @@ body{
     .head-cont{
         height: auto;
         width: 100vw;
-        margin-top: 15%;
+        margin-top: 10%;
         padding-bottom: 0%;
         display: flex;
         justify-content: center;
@@ -383,8 +383,7 @@ body{
         padding-bottom: 0%;
     }
     .title{
-        position: absolute;
-        margin-top: 25%;
+        margin-top: 20%;
         font-size: 60px;
     }
     .title2{
